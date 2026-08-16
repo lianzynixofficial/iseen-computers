@@ -1,22 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+@extends('layouts.public')
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+@section('title', 'I Seen Computer | Designing,Typing & Printing Services')
 
-    <title>Contact Us | I Seen Computer</title>
+@push('styles')
+    @vite('resources/css/contact.css')
+@endpush
 
-    @vite([
-        'resources/css/app.css',
-        'resources/js/app.js',
-    ])
-</head>
+@section('content')
 
-<body class="contact-page">
+<div class="contact-page">
+
+    @include('frontend.partials.navbar')
 
     <main class="contact-main">
 
@@ -195,5 +189,12 @@
 
     </main>
 
-</body>
-</html>
+    @include('frontend.partials.footer')
+
+</div>
+
+@endsection
+
+{{-- @push('scripts')
+    @vite('resources/js/home.js')
+@endpush --}}

@@ -4,7 +4,7 @@ use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend.home.index');
 })->name('home');
 
 Route::get('/contact', function () {

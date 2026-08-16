@@ -43,8 +43,10 @@
                                 </td>
                                 <td>{{ $message->subject ?? 'No subject' }}</td>
                                 <td>
-                                    {{ $message->created_at->format('d M Y') }}
-                                    <small>{{ $message->created_at->format('h:i A') }}</small>
+                                    {{ $message->created_at->timezone(config('app.timezone'))->format('d M Y') }}
+                                    <small>
+                                        {{ $message->created_at->timezone(config('app.timezone'))->format('h:i A') }}
+                                    </small>
                                 </td>
                                 <td>
                                     <span class="status-badge status-badge--{{ $message->status }}">

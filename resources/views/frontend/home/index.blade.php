@@ -473,7 +473,7 @@
 
         </section>
 
-        <section class="home-cta">
+        <section id="homeCta" class="home-cta">
 
         <div class="home-section-container">
 

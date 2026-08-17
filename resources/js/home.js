@@ -1,6 +1,3 @@
-
-
-
 /* =========================================================
    MOBILE NAVBAR
    ========================================================= */
@@ -11,6 +8,7 @@ const navbarMenu = document.querySelector('.navbar-menu');
 if (navbarToggle && navbarMenu) {
     navbarToggle.addEventListener('click', () => {
         const isOpen = navbarMenu.classList.toggle('is-open');
+        navbarToggle.classList.toggle('is-active', isOpen);
 
         navbarToggle.setAttribute(
             'aria-expanded',
@@ -47,4 +45,29 @@ if (revealElements.length > 0) {
     revealElements.forEach((element) => {
         revealObserver.observe(element);
     });
+}
+
+
+
+/* =========================================================
+   HIDE NAVBAR AT FOOTER
+   ========================================================= */
+
+const siteHeader = document.querySelector('.site-header');
+const siteFooter = document.querySelector('.site-footer');
+
+if (siteHeader && siteFooter) {
+    const footerObserver = new IntersectionObserver(
+        ([entry]) => {
+            siteHeader.classList.toggle(
+                'is-hidden',
+                entry.isIntersecting
+            );
+        },
+        {
+            threshold: 0.05,
+        }
+    );
+
+    footerObserver.observe(siteFooter);
 }

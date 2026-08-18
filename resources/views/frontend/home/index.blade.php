@@ -15,6 +15,14 @@
         {{-- Hero Section --}}
         <section class="home-hero">
 
+            <div class="home-hero-background" aria-hidden="true">
+
+                <div class="hero-background-slide is-active"></div>
+                <div class="hero-background-slide"></div>
+                <div class="hero-background-slide"></div>
+
+            </div>
+
             <div class="home-hero-container">
 
                 <div class="home-hero-content">
@@ -70,89 +78,145 @@
 
             <div class="home-section-container">
 
-                <div class="home-section-heading reveal">
+                <div class="services-header reveal">
 
-                    <p class="section-eyebrow">
-                        WHAT WE DO
-                    </p>
+                    <div>
+                        <p class="section-eyebrow">
+                            WHAT WE DO
+                        </p>
 
-                    <h2>
-                        Services Designed for Your Everyday Needs
-                    </h2>
+                        <h2>
+                            Everything You Need, All in One Place.
+                        </h2>
+                    </div>
 
-                    <p>
-                        From creative design and professional printing to typing
-                        and essential digital services, I Seen Computer provides
-                        practical solutions in one place.
+                    <p class="services-intro">
+                        From creative designs and professional printing to typing
+                        and everyday digital assistance, I Seen Computer provides
+                        practical services for students, professionals, businesses
+                        and individuals.
                     </p>
 
                 </div>
 
 
-                <div class="services-grid reveal">
+                <div class="services-showcase">
 
-                    <article class="service-card service-card-blue">
+                    {{-- Main Service --}}
+                    <article class="service-feature service-feature-blue reveal">
 
-                        <div class="service-number">
-                            01
+                        <div class="service-feature-content">
+
+                            <span class="service-feature-number">
+                                01
+                            </span>
+
+                            <h3>
+                                Creative Designing
+                            </h3>
+
+                            <p>
+                                Posters, invitations, certificates, business materials
+                                and creative designs made for your requirements.
+                            </p>
+
+                            <ul class="service-feature-list">
+                                <li>Posters & Flyers</li>
+                                <li>Invitations</li>
+                                <li>Business Designs</li>
+                            </ul>
+
+                            <a href="#contact" class="service-feature-link">
+                                Get a Design
+                                <span>→</span>
+                            </a>
+
                         </div>
 
-                        <h3>
-                            Designing
-                        </h3>
+                        <div class="service-feature-visual">
+                            <span class="service-orb"></span>
+                            <span class="service-grid-pattern"></span>
 
-                        <p>
-                            Creative designs for personal, educational and business
-                            requirements.
-                        </p>
-
-                        <a href="#" class="service-link">
-                            Explore Service
-                        </a>
+                            <div class="service-visual-text">
+                                DESIGN
+                            </div>
+                        </div>
 
                     </article>
 
 
-                    <article class="service-card service-card-red">
+                    {{-- Printing --}}
+                    <article class="service-feature service-feature-red reveal">
 
-                        <div class="service-number">
-                            02
+                        <div class="service-feature-content">
+
+                            <span class="service-feature-number">
+                                02
+                            </span>
+
+                            <h3>
+                                Professional Printing
+                            </h3>
+
+                            <p>
+                                Clear and reliable printing for documents, projects,
+                                study materials and business requirements.
+                            </p>
+
+                            <a href="#contact" class="service-feature-link">
+                                Print with Us
+                                <span>→</span>
+                            </a>
+
                         </div>
 
-                        <h3>
-                            Printing
-                        </h3>
+                        <div class="service-feature-visual">
+                            <span class="service-orb"></span>
+                            <span class="service-grid-pattern"></span>
 
-                        <p>
-                            Quality printing solutions for documents, projects,
-                            business materials and more.
-                        </p>
+                            <div class="service-visual-text">
+                                PRINT
+                            </div>
 
-                        <a href="#" class="service-link">
-                            Explore Service
-                        </a>
+                        </div>
 
                     </article>
 
 
-                    <article class="service-card service-card-gold">
+                    {{-- Digital --}}
+                    <article class="service-feature service-feature-gold reveal">
 
-                        <div class="service-number">
-                            03
+                        <div class="service-feature-content">
+
+                            <span class="service-feature-number">
+                                03
+                            </span>
+
+                            <h3>
+                                Typing & Digital Services
+                            </h3>
+
+                            <p>
+                                Document typing, formatting and everyday digital
+                                assistance when you need it.
+                            </p>
+
+                            <a href="#contact" class="service-feature-link">
+                                Get Started
+                                <span>→</span>
+                            </a>
+
                         </div>
 
-                        <h3>
-                            Typing & Digital Services
-                        </h3>
+                        <div class="service-feature-visual">
+                            <span class="service-orb"></span>
+                            <span class="service-grid-pattern"></span>
 
-                        <p>
-                            Reliable typing, document preparation and everyday
-                            digital assistance.
-                        </p>
+                            <div class="service-visual-text">
+                                DIGITAL
+                            </div>
 
-                        <a href="#" class="service-link">
-                            Explore Service
-                        </a>
+                        </div>
 
                     </article>
 

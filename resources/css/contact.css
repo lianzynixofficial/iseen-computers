@@ -7,13 +7,6 @@
     min-height: 100vh;
     background: #f7f5f0;
     color: #202020;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.contact-page *,
-.contact-page *::before,
-.contact-page *::after {
-    box-sizing: border-box;
 }
 
 .contact-main {
@@ -31,8 +24,9 @@
 
 .contact-header {
     max-width: 700px;
-    margin: 0 auto 40px;
+    margin: 50px auto 40px;
     text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-eyebrow {
